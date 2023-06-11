@@ -1,4 +1,5 @@
 import uvicorn
+import tensorflow as tf
 from fastapi import FastAPI, File, UploadFile 
 from keras.preprocessing import image
 from io import BytesIO
