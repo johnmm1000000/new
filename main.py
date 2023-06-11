@@ -17,7 +17,10 @@ def read_imagefile(file) -> Image.Image:
     return image
 
 app = FastAPI()
-@app.post("/predict")
+@app.get('/')
+async def index():
+    return {"hola"}
+@app.post('/predict')
 async def predict_api(file: UploadFile = File(...)):
     extension = file.filename.split(".")[-1] in ("jpg", "jpeg", "png",'webp')
     if not extension:
