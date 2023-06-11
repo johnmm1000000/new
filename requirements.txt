@@ -1,5 +1,5 @@
 Pillow ==9.3
-tensoboard==2.11
+
 tensorflow-gpu==2.0
 tensorflow-estimator==2.11
 
